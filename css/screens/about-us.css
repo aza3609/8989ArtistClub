@@ -53,7 +53,7 @@
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
-#about-us .header-shop img:first-child{
+#about-us .header-left .header-shop img:first-child{
     animation-name: about-transparent;
     animation-delay: 0s;
     animation-duration: 1s;

@@ -1,6 +1,6 @@
 const sheetId = '1_8cnbn5tTfFDJwWIIXgscWO_UjqLh_2mjdZIvB51AwY'; // Google Sheets ID
 const apiKey = 'AIzaSyCpuSDYNhxT4134m51GfNvQ3ULd4eLpH-M'; // Google API Key
-const range = 'exhibition-en!A2:D4'; // 데이터 범위
+const range = 'exhibition-en!A2:D'; // 데이터 범위
 
 fetch(`https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${range}?key=${apiKey}`)
 .then(response => response.json())

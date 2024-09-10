@@ -7,9 +7,10 @@ header {
     align-items: center;
     box-sizing: border-box;
     position: relative;
-    font-size: 22px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 500;
     border-bottom: 1px solid black;
+    position: relative;
 }
 .main-header{
     border-bottom: none;
@@ -33,7 +34,6 @@ header ul{
     width: 55px;
     position: absolute;
     left: 48%;
-    transition: all 0.5s ease-in-out;
 } 
 .header-right li{
     margin-right: 38px;
@@ -55,10 +55,14 @@ header ul{
     border-radius: 50%;
     border: 1px solid black;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 500;
+}
+.header-lang--white{
+    border: 1px solid white;
+    color: white;
 }
 header .bold{
-    font-weight: 700;
+    font-weight: 800;
 }
 
 #about-us .header-logo img:first-child{
@@ -92,4 +96,121 @@ footer img{
 }
 footer p{
     margin-top: 20px;
+    font-size: 18px;
 }
+
+/* 햄버거 */
+.hamburger-btn{
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 32px;
+    z-index: 4;
+    width: 32px;
+    height: 16px;
+    border-bottom: 1.5px solid black;
+    border-top: 1.5px solid black;
+    z-index: 4;
+}
+.hamburger-btn--white{
+    border-bottom: 1.5px solid white;
+    border-top: 1.5px solid white;
+}
+.hamburger-nav{
+    padding: 30px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    z-index: 3;
+}
+.hamburger-nav--black{
+    background-color: black;
+    color: white;
+}
+.hamburger-nav .logo{
+    width: 55px;
+    margin-bottom: 20px;
+} 
+.hamburger-nav li{
+    font-size: 22px;
+margin-bottom: 26px;
+display: flex;
+align-items: center;
+}
+.hamburger-nav__util{
+    margin-top: 30px;
+}
+.hamburger-nav__util .header-shop{
+    margin-right: 26px;
+    margin-top: 10px;
+}
+
+.hamburger-nav.active {
+    display: flex;
+}
+.hamburger-btn.active{
+    color: black;;
+    position: fixed;
+}
+.hamburger-nav .header-shop{
+    animation: none;
+}
+
+
+
+
+/* 노트북 & 테블릿 가로 (해상도 1024px ~ 1279px)*/ 
+@media all and (max-width:1279px) { 
+} 
+/* 테블릿 가로 (해상도 768px ~ 1023px)*/ 
+@media all and (max-width:1023px) { 
+    header {
+        height: 80px;
+    }
+    .header-left,.header-right{
+        display: none;
+    }
+    .header-logo{
+        width: 40px;
+    }
+
+    .hamburger-btn{
+        display: flex;
+    }
+    .hamburger-btn.active{
+        right: 38px;
+    }
+} 
+/* 모바일 가로 & 테블릿 세로 (해상도 480px ~ 767px)*/ 
+@media all and (max-width:767px) {
+    
+    .hamburger-btn{
+        display: flex;
+    }
+    .hamburger-btn.active{
+        right: 24px;
+    }
+    footer p{
+        font-size: 16px;
+    }
+    footer img{
+        width: 120px;
+        margin-bottom: 8px;
+    }
+} 
+/* 모바일 세로 (해상도 ~ 479px)*/ 
+@media all and (max-width:479px) {
+    footer p{
+        font-size: 14px;
+    }
+    .hamburger-btn.active{
+        right: 16px;
+    }
+}
+
