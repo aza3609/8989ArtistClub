@@ -1,0 +1,64 @@
+/*reset*/
+@import "reset.css";
+
+/*variables*/
+@import "variables.css";
+
+/*components*/
+@import "components/header&footer.css";
+@import "components/review.css";
+
+/*screens*/
+@import "screens/main.css";
+@import "screens/about-us.css";
+@import "screens/exhibition.css";
+@import "screens/store.css";
+@import "screens/detail.css";
+
+/*font*/
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+* {
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+    line-height: 1.55;
+    cursor: none !important;
+    -webkit-cursor: none !important;
+    text-underline-offset : 5px;
+  }
+body{
+    background-color: #ffffff;
+    padding: 0px var(--main-margin);
+    box-sizing: border-box;
+    cursor: none !important;
+    -webkit-cursor: none !important;
+}
+
+.underline {
+    text-decoration: underline;
+    text-underline-offset : 5px;
+}
+h1{
+    font-size: 38px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+}
+h2{
+    font-weight: 600;
+}
+h6{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cursor { 
+    position: fixed; 
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%; 
+    background: white;
+    pointer-events: none; 
+    z-index: 9999;
+    transition: transform 0.2s; 
+    mix-blend-mode:difference;
+}

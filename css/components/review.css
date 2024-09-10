@@ -1,0 +1,124 @@
+/*------------ 소통 댓글 ------------*/
+#review-container{
+    display: flex;
+    flex-direction: column;
+    border-top: 1px black solid;
+    margin-top: 60px;
+    padding: 60px 0px;
+    box-sizing: border-box;
+    width: 100%;
+}
+#detail-column-2 div#reviews {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    width: 100%;
+    
+}
+.review{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 16px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px dashed black;
+}
+.review img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.review p.content{
+    font-size: 18px;
+    margin: 16px 0px 24px 0px;
+    word-break: break-word;
+}
+.review-bottom{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.review p.date{
+    font-size: 16px;
+}
+.review strong{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    font-size: 16px;
+    font-weight: 700;
+}
+#review-input{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+#review-input input, #review-input textarea{
+    border: none;
+    border-bottom: 1px solid black;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    padding: 0px;
+    font-size: 18px;
+    width: 100%;
+}
+#review-input textarea{
+    height: 61px;
+    resize:none;
+    line-height: 1.5;
+    padding-top: 18px;;
+    box-sizing: border-box;
+}
+
+#review-input input:focus, #review-input textarea:focus{
+    outline: none;
+}
+#submit-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius:0px;
+    font-size: 18px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+}
+.delete-btn svg{
+    width: 19px;
+}
+.delete-btn{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    color: gray;
+}
+.reviews_column{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+.reviews_column img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*------------ 메인페이지 ------------*/

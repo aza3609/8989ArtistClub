@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8989 예술가 클럽</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+</head>
+<body id="detail">
+
+    <header>
+        <ul class="header-right">
+            <li><a href="about-us--en.html">About 8989 Artist Club</a></li>
+            <li class="bold"><a href="exhibition--en.html">Exhibition</a></li>
+            <li><a href="store--en.html">Store</a></li>
+        </ul>
+        <a class="header-logo" href="index--en.html"><img src="src/8989-logo.svg" alt=""></a>
+        <ul class="header-left">
+            <li> <a class="header-shop" target="_blank" href="https://smartstore.naver.com/dokjae"><img src="src/store.svg" alt=""></a></li>
+            <li class="header-lang"><a href="">한</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <div id="detail-wrap">
+            <div id="detail-column-1"></div>
+            <div id="detail-column-2">
+                <div id="description-container">
+                <div class="container-top">
+                    <h5>Exhibition</h5>
+                    <a class="list-btn" href="exhibition--en.html"><img src="src/icon-list.svg" alt=""><span class="underline">Back to List</span></a>
+                </div>
+                <h1></h1>
+                <div><h6>Date</h6><p class="detail-date"></p></div>
+                <div><h6>Venue</h6><p class="detail-location"></p></div>
+                <div><h6>Time</h6><p class="detail-time"></p></div>
+                <div class="margin-bottom"><h6>Price</h6><p class="detail-price"></p></div>
+                <h6>Description</h6>
+                <p class="detail-description margin-bottom"></p>
+                <h6>Artists</h6>
+                <p class="detail-artist"></p>
+            </div>
+            <div id="review-container">
+                <div class="container-top">
+                    <h5>Visitor Impressions</h5>
+                    <!--<a id="show-form-btn" class="underline">스티커 붙이기</a>-->
+                </div>
+                <div id="review-input">
+                    <input type="text" id="nickname" placeholder="Nickname" required>
+                    <textarea id="review" placeholder="Please leave your thoughts" maxlength='200' required></textarea>
+                    <input type="password" id="password" placeholder="Password(4 digit)" maxlength="4" required>
+                    <button id="submit-btn">Submit</button>
+                </div>
+                <div id="reviews">
+                    <div class="reviews_column"></div>
+                    <div class="reviews_column"></div>
+                    <div class="reviews_column"></div>
+                </div>
+               </div>
+            </div>
+       </div>
+
+    </main>
+
+    <footer>
+        <img src="src/wecation-logo.svg" alt="위케이션 로고">
+        <p>Copyright 2024. Wecation All rights reserved.</p>
+    </footer>
+    <div class="cursor">
+        <div class="cursor-circle"></div>
+    </div>
+    <script src="js/detail--en.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/lang-switch--detail.js"></script>
+    <script src="js/review.js"></script>
+</body>
+</html>

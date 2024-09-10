@@ -1,0 +1,95 @@
+.about-top{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+.about-top__img{
+    position: relative;
+    width: 400px;
+    height: 540px;
+    margin-right: 80px;
+
+}
+.about-top__img img:first-child{
+    width: 400px;
+    height: 540px;
+}
+.about-top__text{
+    font-size: 28px;
+    font-weight: 600;
+    align-self: center;
+    word-break: keep-all;
+}
+.rotate{
+    width: 60px;
+    position: absolute;
+    top: 48%;
+    right: 19%;
+    animation-name: rotate;
+    animation-delay: 0s;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+
+/*------------ 애니메이션 -----------*/
+#about-us{
+    animation-name: about-us;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+#about-us header{
+    animation-name: about-header;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+#about-us .header-logo img:first-child{
+    animation-name: about-transparent;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+#about-us .header-shop img:first-child{
+    animation-name: about-transparent;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+#about-us .header-lang{
+    animation-name: about-header-lang;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes about-us {
+    from{
+    }
+    to{
+        background-color: black;
+        color: white;
+    }
+}
+@keyframes about-header{
+    to{
+        border-bottom: 1px solid white;
+    }
+}
+@keyframes about-header-lang{
+    to{
+        border: 1.5px solid white;
+    }
+}
+@keyframes about-transparent{
+    to{
+        opacity: 0;
+    }
+}
+@keyframes rotate{
+    to{
+        transform: rotate(360deg);
+    }
+}
