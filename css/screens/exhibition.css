@@ -3,7 +3,8 @@
 }
 .category {
     display: flex;
-    font-size: 24px;
+    font-size: 22px;
+    font-weight: 500;
     margin-top: 40px;
 }
 .category li{
