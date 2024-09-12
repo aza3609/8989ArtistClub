@@ -46,14 +46,3 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
-
-
-const storeGoodsMain = document.getElementById('store-goods--main');
-
-document.getElementById('store-slide-left').addEventListener('click', () => {
-    storeGoodsMain.scrollLeft -= storeGoodsMain.scrollWidth * 0.3; // 왼쪽으로 20% 이동
-});
-
-document.getElementById('store-slide-right').addEventListener('click', () => {
-    storeGoodsMain.scrollLeft += storeGoodsMain.scrollWidth * 0.3; // 오른쪽으로 20% 이동
-});

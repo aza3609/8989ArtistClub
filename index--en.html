@@ -17,7 +17,8 @@
         </ul>
         <a class="header-logo" href="index--en.html"><img src="src/8989-logo.svg" alt=""></a>
         <ul class="header-left">
-            <li> <a class="header-shop" target="_blank" href="https://smartstore.naver.com/dokjae"><img src="src/store.svg" alt=""></a></li>
+            <li> <a class="header-shop" target="_blank" href="https://smartstore.naver.com/dokjae">
+                <img src="src/store.svg" alt=""></a></li>
             <li class="header-lang"><a href="">한</a></li>
         </ul>
         <a class="hamburger-btn"></a>
@@ -26,7 +27,10 @@
             <li><a href="about-us--en.html">About 8989 Artist Club</a></li>
             <li><a href="exhibition--en.html">Exhibition</a></li>
             <li><a href="store--en.html">Store</a></li>
-            <li class="hamburger-nav__util"> <a class="header-shop" target="_blank" href="https://smartstore.naver.com/dokjae"><img src="src/store.svg" alt="네이버 스토어 새창으로 열기"></a><a class="header-lang" href="">한</a></li>
+            <li class="hamburger-nav__util"> 
+                <a class="header-shop" target="_blank" href="https://smartstore.naver.com/dokjae"><img src="src/store.svg" alt="네이버 스토어 새창으로 열기"></a>
+                <a class="header-lang" href="">한</a>
+            </li>
         </ul>
     </header>
     <main>
@@ -37,17 +41,20 @@
                     <h1>[Group Exhibition] Four trailers or sculptures and…</h1>
                     <p>Date: 2024.3.21.(mon) - 2024.3.25.(thur)</p>
                 </div>
-                <a class="main-top_btn">
-                    <a class="main-top_btn" href="https://aza3609.github.io/8989ArtistClub/detail--en.html?id=1">
+                <a class="main-top_btn" href="https://aza3609.github.io/8989ArtistClub/detail--en.html?id=1">
+                        <img src="src/arrow-right.svg" alt="대표 전시 페이지로 이동">
                 </a>
             </div>
         </section>
         <section class="main-exhibition">
             <div class="section-title">
                 <h1>Exhibitions</h1>
-                <a class="underline" href="exhibition--en.html">View More</a>
+                <a class="underline-btn underline" href="exhibition--en.html">View More</a>
             </div>
-            <div id="exhibitions--main" class="exhibitions">
+            <button id="exhibition-slide-left" class="slide-left">◀</button><button id="exhibition-slide-right" class="slide-right">▶</button>
+            <div class="main-exhibition-wrap">
+                <div id="exhibitions--main" class="exhibitions">
+            </div>
 
             </div>
         </section>
@@ -63,11 +70,10 @@
         <section class="main-store">
             <div class="section-title">
                 <h1>Store</h1>
-                
-                <a class="underline" href="store--en.html">View More</a>
+                <a class="underline-btn underline" href="store--en.html">View More</a>
             </div>
+            <button id="store-slide-left" class="slide-left">◀</button><button id="store-slide-right" class="slide-right">▶</button>
             <div class="main-store-wrap">
-                <button id="store-slide-left">◀</button><button id="store-slide-right">▶</button>
                 <div id="store-goods--main" class="store-goods"></div>
 
             </div>
@@ -77,15 +83,14 @@
             <div>
                 <p>8989 Artist Club welcomes writers of any genre. 
                     This group, comprised of artists living in the 1980s and 1990s in Korean art history, talks about the stark reality that one cannot just immerse oneself in artistic activities. Created by an artist born in 1989, a member of the generation involved, it is a record of artists living in the era of capitalism and was created for solidarity with the purpose of continuation.</p>
-                <a href="about-us.html" class="underline">More Info</a>
+                <a href="about-us.html" class="underline-btn underline">More Info</a>
             </div>
         </section>
         <section class="main-sns">
             <div class="section-title">
                 <h1>Social Media</h1>
             </div>
-            <p>Wecation continues various activities together in search of the love that has been lost in our time.
-                <br>Please accompany Wecation by following us on social media.
+            <p>Wecation continues various activities together in search of the love that has been lost in our time. Please accompany Wecation by following us on social media.
             </p>
             <div class="main-sns-link">
                 <a target="_blank" href="https://www.instagram.com/wecation_/"><img src="src/instra-logo.svg" alt="">&nbsp;@wecation_</a>
@@ -130,5 +135,6 @@
     <script src="js/cursor.js"></script>
     <script src="js/lang-switch.js"></script>
     <script src="js/header.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

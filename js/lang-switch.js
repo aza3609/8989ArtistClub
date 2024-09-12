@@ -1,29 +1,35 @@
-const langBtn = document.querySelector('.header-lang');
+const langBtns = document.querySelectorAll('.header-lang');
 
-langBtn.addEventListener('click', function(event) {
-    event.preventDefault();
+langBtns.forEach(langBtn => {
+    langBtn.addEventListener('click', function(event) {
+        event.preventDefault();
     
-    // 현재 페이지 URL을 가져옵니다.
+    // 현재 페이지의 URL을 가져옵니다.
     const currentUrl = window.location.href;
+    const url = new URL(currentUrl);
 
-    // 현재 페이지의 파일명을 추출합니다.
-    const urlParts = currentUrl.split('/');
-    const fileName = urlParts[urlParts.length - 1]; // 마지막 부분이 파일명입니다.
+    // 쿼리 파라미터를 추출합니다.
+    const queryParams = url.search; // ?id=1 형태로 저장됩니다.
 
-    // 파일명에서 확장자를 제외한 부분을 추출합니다.
+    // 현재 파일명과 확장자를 추출합니다.
+    const fileName = url.pathname.split('/').pop();
     const fileBaseName = fileName.replace('.html', '');
 
-    // 현재 페이지가 영어 버전인지 확인합니다.
-    const isEnglish = fileBaseName.includes('--en');
-
-    // 영어 버전인 경우, '--en'을 제거하고 한국어 버전으로 이동합니다.
-    if (isEnglish) {
-        const newFileName = fileBaseName.replace('--en', '') + '.html';
-        window.location.href = currentUrl.replace(fileName, newFileName);
-    } 
-    // 한국어 버전인 경우, '--en'을 추가하여 영어 버전으로 이동합니다.
-    else {
-        const newFileName = fileBaseName + '--en.html';
-        window.location.href = currentUrl.replace(fileName, newFileName);
+    // 언어 버전에 따라 새로운 파일명을 결정합니다.
+    let newFileBaseName;
+    if (fileBaseName.includes('--en')) {
+        // '--en'이 파일명에 포함되어 있으면 제거
+        newFileBaseName = fileBaseName.replace('--en', '');
+    } else {
+        // '--en'이 파일명에 포함되어 있지 않으면 추가
+        newFileBaseName = fileBaseName + '--en';
     }
+    const newFileName = newFileBaseName + '.html';
+
+    // 새 URL을 생성합니다.
+    const newUrl = url.origin + url.pathname.replace(fileName, newFileName) + queryParams;
+
+    // 새 URL로 이동합니다.
+    window.location.href = newUrl;
 });
+})

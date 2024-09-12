@@ -1,4 +1,31 @@
 :root{
-    --main-margin: 50px;
+    --body-padding: 0 50px;
     --point-color: #FF0000;
+    --section-padding: 80px;
 }
+
+/* 노트북 & 테블릿 가로 (해상도 1024px ~ 1279px)*/ 
+@media all and (max-width:1279px) { 
+} 
+/* 테블릿 가로 (해상도 768px ~ 1023px)*/ 
+@media all and (max-width:1023px) { 
+    :root{
+        --body-padding: 0 38px;
+        --section-padding: 60px;
+    }
+} 
+/* 모바일 가로 & 테블릿 세로 (해상도 480px ~ 767px)*/ 
+@media all and (max-width:767px) {
+    :root{
+        --body-padding: 0 24px;
+        --section-padding: 50px;
+    }
+} 
+/* 모바일 세로 (해상도 ~ 479px)*/ 
+@media all and (max-width:479px) {
+    :root{
+        --body-padding: 0 16px;
+        --section-padding: 40px;
+    }
+}
+
