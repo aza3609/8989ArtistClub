@@ -133,10 +133,11 @@
     font-size: 32px;
     border-radius: 50%;
     background-color: white;
+    color: black;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .main-exhibition button{
-    top: 50%;
+    top: 45%;
 }
 #exhibition-slide-left{
 left: -22px;
@@ -533,7 +534,7 @@ padding-left: 8px;
         height: 48vw;
     }
     .main-about {
-        padding: 40px;
+        padding: 40px 0px;
     }
     .main-top{
         padding-bottom: 40px;

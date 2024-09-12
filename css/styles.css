@@ -16,10 +16,22 @@
 @import "screens/detail.css";
 
 /*font*/
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+
+@font-face {
+    font-family: "Pretendard Variable", Pretendard, sans-serif !important; 
+    src:url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.woff2") format('woff2'),
+    url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.woff") format('woff');
+    unicode-range: U+AC00-D7A3;
+}
+@font-face {
+    font-family: "lato", sans-serif !important;
+    src:url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100..900&display=swap') format('woff2');
+    unicode-range: U+26, U+0030-0039;
+}
 
 * {
-    font-family: 'Spoqa Han Sans Neo', sans-serif;
+    font-family: "Pretendard Variable", "lato", sans-serif;
     line-height: 1.55;
     cursor: none !important;
     -webkit-cursor: none !important;
@@ -50,7 +62,9 @@ h6{
     font-size: 20px;
     font-weight: 600;
 }
-
+p{
+    font-size: 18px;
+}
 .cursor { 
     position: fixed; 
     width: 20px; 
@@ -99,7 +113,10 @@ h6{
         padding: 0px 16px;
     }
     h1{
-        font-size: 24px;
+        font-size: 28px;
+    }
+    p{
+        font-size: 17px;
     }
   }
 
