@@ -35,18 +35,3 @@ fetch(`https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${range}?
     });
 })
 .catch(error => console.error('Error:', error));
-
-
-
-
-const exhibitionsMain = document.getElementById('exhibitions--main');
-
-const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
-
-document.getElementById('exhibition-slide-left').addEventListener('click', () => {
-    document.getElementById('exhibitions--main').scrollLeft -= 430; // 왼쪽으로 200px 이동
-});
-
-document.getElementById('exhibition-slide-right').addEventListener('click', () => {
-    document.getElementById('exhibitions--main').scrollLeft += 430; // 오른쪽으로 200px 이동
-});

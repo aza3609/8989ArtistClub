@@ -1,30 +1,33 @@
 .about-top{
     display: flex;
     justify-content: center;
-    margin-top: 80px;
+    align-items: center;
+    margin-top: var(--section-padding);
+    padding: 0 80px;
+    box-sizing: border-box;
 }
 .about-top__img{
-    position: relative;
-    width: 400px;
-    height: 540px;
+    width: 380px;
     margin-right: 80px;
-
+    position: relative;
+    justify-self: center;
 }
 .about-top__img img:first-child{
-    width: 400px;
-    height: 540px;
+    width: 380px;
 }
 .about-top__text{
+    align-self: center;
+}
+.about-top__text p{
     font-size: 28px;
     font-weight: 600;
-    align-self: center;
     word-break: keep-all;
 }
 .rotate{
-    width: 60px;
+    width: 14%;
     position: absolute;
     top: 48%;
-    right: 19%;
+    right: 20%;
     animation-name: rotate;
     animation-delay: 0s;
     animation-duration: 5s;
@@ -93,3 +96,56 @@
         transform: rotate(360deg);
     }
 }
+
+
+
+/* 노트북 & 테블릿 가로 (해상도 1024px ~ 1279px)*/ 
+@media all and (max-width:1279px) { 
+} 
+/* 테블릿 가로 (해상도 768px ~ 1023px)*/ 
+@media all and (max-width:1023px) { 
+    .about-top__text p{
+        font-size: 26px;
+    }
+    .about-top{
+        padding: 0;
+    }
+    .about-top__img{
+        width: 300px;
+    }
+    .about-top__img img:first-child{
+        width: 300px;
+    }
+} 
+/* 모바일 가로 & 테블릿 세로 (해상도 480px ~ 767px)*/ 
+@media all and (max-width:767px) {
+    .about-top{
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-top__text p{
+        font-size: 22px;
+    }
+    .about-top__img{
+        width: 250px;
+        margin-right: 0px;
+        margin-bottom: 40px;
+    }
+    .about-top__img img:first-child{
+        width: 250px;
+    }
+    .rotate{
+        width: 14%;
+        position: absolute;
+        top: 48%;
+        right: 20%;
+    }
+} 
+/* 모바일 세로 (해상도 ~ 479px)*/ 
+@media all and (max-width:479px) {
+    .about-top{
+        padding: 0;
+    }
+
+}
+

@@ -35,8 +35,7 @@
     left: 0;
     z-index: -1;
 }
-.review p.content{
-    font-size: 18px;
+.review .content{
     margin: 16px 0px 24px 0px;
     word-break: break-word;
 }
@@ -45,15 +44,16 @@
     justify-content: space-between;
     width: 100%;
 }
-.review p.date{
+.review .date{
     font-size: 16px;
+    color: rgb(100, 100, 100);
 }
 .review strong{
     display: flex;
     width: 100%;
     justify-content: flex-start;
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 17px;
+    font-weight: 600;
 }
 #review-input{
     display: grid;

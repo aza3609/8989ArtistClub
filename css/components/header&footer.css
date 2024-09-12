@@ -69,10 +69,10 @@ header .bold{
     position: absolute;
     top: 0;
 }
-#about-us .header-shop {
+#about-us .header-left .header-shop {
     position: relative;
 }
-#about-us .header-shop img{
+#about-us .header-left .header-shop img{
     position: absolute;
     top: -16px;
     right: 0;
@@ -96,8 +96,7 @@ footer img{
     margin-bottom: 12px;
 }
 footer p{
-    margin-top: 20px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 /* 햄버거 */
